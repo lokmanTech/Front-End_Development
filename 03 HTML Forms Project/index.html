@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Invitation Lokman's Dinner</title>
+    <link href="css/forms.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+<body>    
+    <div class="wrapper">
+    <section> <!-- this will help differentiate the mark up that happen in HTML -->
+    <h1>e-Invitation Lokman's Dinner</h1>
+    <p class="h1">Fill out the form below for RSVP.</p>
+    <fieldset> <!-- function of the fieldset is to manage certain in order -->
+        <legend> Your contact information </legend> <!-- the legend will provide info of your forms under fieldset for container-->
+            <form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="post"> <!-- for more basic info about form, we can go to www.frontendmaster.github.io/bootcamp/forms, for action part, is where the information been transmitted, it is part of backend programming-->
+                <input type="hidden" name="send_to" value="lhakim.nazri@gmail.com">
+                    <label for="name">Your Name:</label>  <!-- the label will help to justify on item that you want audience to fill in-->
+                        <input type="text" id="name" name="name" placeholder="Insert your name here"> <!-- input is function on how HTML will fetch the information, you can several tag to control the input of particular info. Plus, every input need to have unique id, so different programme language will fetch same data that you collab-->
+                    <label for="phone">Your Phone Number:</label> 
+                        <input type="tel" id="phone" name="phone" placeholder="Don't forget your area code!"> <!--this basic function on collecting phone information-->
+                    <label for="email">Your e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Insert your e-mail here"> <!--this basic function on collecting email information-->
+                    <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" placeholder="Choose the date"> <!--this basic function on collecting date information-->
+                    <label for="qty">How many people you invite?</label>
+                        <input type="number" id="qty" name="qty" min="1" max="10" placeholder="how many you invited?"> <!--On collecting numbers/unit/quantity you can control the data, in this case the number is limit from 1 to 10-->
+    </fieldset>
+    <fieldset>
+        <legend>Invitation Information</legend>
+                <p>What type of concept you will wear?</p> <!-- now we are focusing on using the radio button in HTML-->
+                <label>
+                    <input type="radio" name="ufotype" value="classic">classic
+                </label>
+                <label>
+                    <input type="radio" name="ufotype" value="futuristic">futuristic
+                </label>
+                <label>
+                    <input type="radio" name="ufotype" value="pop">pop
+                </label>
+                <label>
+                    <input type="radio" name="ufotype" value="formal">formal
+                </label>
+                <label for="abtype">What type of concept experience do you want?  <!-- now we are focusing on using the select list button in HTML, similar in catching information, selecting only one option, but different techniques-->
+                </label>
+                    <select id="abtype" name="abtype">
+                        <option selected>-Select one-</option>
+                        <option value="tour">Touring to the space</option>
+                        <option value="garden">forest garden</option>
+                        <option value="beach">side of the beach</option>
+                        <option value="sky">sky dining</option>
+                    </select>
+                <label for="comments">Your Comments:
+                </label>
+                <textarea id="comments" name="comments" placeholder="Tell me everything!"></textarea>
+                <label>
+                <input type="checkbox" value="subscribe" name="subscribe" checked>Add me to your email list
+                </label>
+    </fieldset>
+    <button type="submit">Submit</button>
+    </form>
+    <h3>The Dining Location</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2816.944851081669!2d101.70920181630082!3d3.157434317854394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc370355a62143%3A0x84551331d40222cc!2sSky%20Suites%20KLCC%20by%20Arman!5e0!3m2!1sen!2smy!4v1695735846583!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p><b>Sky Suites KLCC by Arman</b></p>
+    <p>18, Jalan P. Ramlee, 50250, Wilayah Persekutuan Kuala Lumpur.</p>
+    </div>
+</section>
+
+<script scr="../js/forms.js"></script>
+</body>
+</html>
