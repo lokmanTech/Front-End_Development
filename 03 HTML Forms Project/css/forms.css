@@ -1,15 +1,20 @@
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
+
 body {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin: 0;
 	padding: 0;
 	background-image: url(../img/galaxy.jpg);
 }
+
 .wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -17,28 +22,35 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	background-color: #efb106;
-    justify-content: center;
-    align-items: center;
+	justify-content: center;
+	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-}	
-p, [for="abtype"], [for="comments"] {
+}
+
+p,
+[for="abtype"],
+[for="comments"] {
 	margin-bottom: 1rem;
 	margin-top: 2rem;
 }
+
 section {
 	flex-basis: 30%;
 	margin-right: auto;
 	margin-left: auto;
 }
+
 aside {
 	flex-basis: 33%;
 }
+
 fieldset {
 	border: 1px solid black;
 	border-radius: 15px;
 	margin-bottom: 2rem;
 }
+
 legend {
 	font-weight: bold;
 	font-size: 1.3rem;
@@ -46,17 +58,21 @@ legend {
 	margin-bottom: 1rem;
 	display: block;
 }
+
 label {
 	display: block;
 	margin-bottom: 0.3rem;
 }
+
 textarea {
 	height: 10rem;
 	padding: 1rem;
 }
+
 select {
 	font-size: 1rem;
 }
+
 button {
 	margin: 1.5rem 0;
 	font-size: 1rem;
@@ -66,11 +82,15 @@ button {
 	border-radius: 10px;
 	justify-content: center;
 }
+
 button:hover {
 	background-color: black;
-	color:blanchedalmond;
+	color: blanchedalmond;
 }
-input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+select {
 	display: block;
 	margin-bottom: 2rem;
 	width: 20rem;
@@ -78,19 +98,16 @@ input:not([type="radio"]):not([type="checkbox"]), textarea, select {
 	padding: 0 1rem;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	border-radius: 5px;
-	border:none;
+	border: none;
 }
+
 h1 {
 	font-family: 'Montserrat', 'georgia';
 	display: block;
 	margin: 4rem 2rem 0 0;
 	font-size: 200%;
 }
+
 footer {
 	display: block;
 }
-
-
-
-
-

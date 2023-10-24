@@ -83,12 +83,11 @@ function age(userAnswer, currentYear, birthYear) {
 function larger(userAnswer, num1, num2) {
     // which of ${number4} and ${number5} is larger (if they're the same then pick that number)?
     // 300 pts
+    let isCorrect;
     if (num1 > num2) {
-        return num1;
-    } else if (num2 > num1) {
-        return num2;
+        isCorrect = userAnswer == num1;
     } else {
-        return num1;
+        isCorrect = userAnswer == num2;
     }
 
     if (isCorrect) {
